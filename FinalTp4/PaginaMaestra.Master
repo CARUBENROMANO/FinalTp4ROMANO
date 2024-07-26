@@ -1,0 +1,32 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PaginaMaestra.master.cs" Inherits="FinalTp4.PaginaMaestra" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Final de Tecnica de programacion 4</title>
+    <link href="Css/nav.css" rel="stylesheet" />
+    <link href="Css/footer.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div class="nav">
+                <ul>
+                    <li><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/MovimientosContables.aspx">MovimientosContables</asp:HyperLink></li>
+                    <li><asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Cuentas.aspx">Cuentas</asp:HyperLink></li>
+                </ul>
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <div class="footer">
+                <p>Tecnicas de Programacion 4</p>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

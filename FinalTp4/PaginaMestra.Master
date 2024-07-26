@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PaginaMestra.master.cs" Inherits="FinalTp4.PaginaMestra" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div class="navbar">
+
+                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Cobranzas.aspx">Gestion de Cobranzas</asp:HyperLink>
+&nbsp;
+                <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/FiltrarCobranzas.aspx">Filtrar Cobranzas</asp:HyperLink>
+
+                </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <div class="footer">
+                <p>Tecnicas de Programacion 4</p>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
